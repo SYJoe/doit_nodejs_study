@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.use(express.json()); 
-// app.set('view engine', 'ejs'); 
+app.set('view engine', 'ejs'); 
 
 app.get('/', function (request, response) {
     response.send('NodeJS-DoiT_res_method');
@@ -12,22 +12,22 @@ app.get('/getapi', function(request, response) {
     let data = "data";
     let login = false;
     
-    // response.send(data);
+    response.send(data);
 
-    // response.download("./datafile");
+    response.download("./datafile");
 
-    // response.json(data);
+    response.json(data);
 
-    // response.redirect("/redirect");
+    response.redirect("/redirect");
 
-    // response.render('index');
+    response.render('index');
 
-    // if(login) {
-    //     response.sendStatus(200);
-    // }
-    // else {
-    //     response.sendStatus(500);
-    // }
+    if(login) {
+        response.sendStatus(200);
+    }
+    else {
+        response.sendStatus(500);
+    }
 });
 
 app.get('/redirect', function(request, response) {

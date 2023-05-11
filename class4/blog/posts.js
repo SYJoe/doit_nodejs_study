@@ -4,14 +4,14 @@ const router = express.Router();
 let data = [];
 
 router.get('/', function (request, response) {
-    // response.send(data);
-    response.render('index', { data });
+    response.send(data);
+    // response.render('index', { data });
 });
 
 router.get('/:id', function (request, response) {
-    // response.send(data[request.params.id]);
-    let post = data[request.params.id]
-    response.render('post', { post });
+    let post = data[request.params.id];
+    response.send(post);
+    // response.render('post', { post });  
 });
 
 router.post('/upload', function(request, response) {
