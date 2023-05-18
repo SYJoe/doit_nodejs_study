@@ -6,7 +6,7 @@
 2. JS object / node + express 입문
 3. express 심화(GET, POST)
 4. response method, blog project(posts)
-5. DB(MariaDB), blog project(login)
-6. login(JWT, Session), blog project(login + posts)
-7. ?
+5. DB(Insert, Select), blog project(login)
+6. DB(Update, Delete), blog project(login + posts)
+7. login(JWT, Session)
 8. ?
